@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>calculator</title>
+    <link rel="stylesheet" type="text/css" href="css.css">
+  </head>
+  <body>
+         <div class="main">
+           <h1>CALCULATOR</h1><br>
+            <form name ="form">
+              <input class ="view" id="view" name="view">
+            </form>
+              <table>
+                  <tr>
+                      <td><input class="button" type="button" value="c" onclick="c()"></td>
+                      <td><input class="button" type="button" value=" "></td>
+                      <td><input class="button" type="button" value="/"onclick="input('/')"></td>
+                      <td><input class="button" type="button" value="x"onclick="input('*')"></td>
+                  </tr>
+                  <tr>
+                      <td><input class="button" type="button" value="7"onclick="input(7)"></td>
+                      <td><input class="button" type="button" value="8"onclick="input(8)"></td>
+                      <td><input class="button" type="button" value="9"onclick="input(9)"></td>
+                      <td><input class="button" type="button" value="-"onclick="input('-')"></td>
+                  <tr>
+                  </tr>
+                      <td><input class="button" type="button" value="4"onclick="input(4)"></td>
+                      <td><input class="button" type="button" value="5"onclick="input(5)"></td>
+                      <td><input class="button" type="button" value="6"onclick="input(6)"></td>
+                      <td><input class="button" type="button" value="+"onclick="input('+')"></td>
+                  </tr>
+                  <tr>
+                      <td><input class="button" type="button" value="1"onclick="input(1)"></td>
+                      <td><input class="button" type="button" value="2" onclick="input(2)"></td>
+                      <td><input class="button" type="button" value="3" onclick="input(3)"></td>
+                      <td rowspan="2"><input class="button" style="height:105px" type="button" value="=" onclick="eq()"></td>
+
+                  </tr>
+                  <tr>
+                    <td colspan=2><input class="button" style="width:105px" type="button" value="0"onclick="input(0)"></td>
+                    <td><input class="button" type="button" value="." onclick="input('.')"></td>
+                  </tr>
+              </table>
+
+         </div>
+         <div class="footer">
+              ++++++++++  Made for education only  Thank you,teacher ++++++++++  </div>
+  </body>
+    <script>
+       function input(num){
+          try {
+            var res =    document.form.view.value+num;
+            document.form.view.value =res;
+          } catch (e) {
+               alert(e);
+          } finally {
+
+          }
+
+       }
+       function eq(){
+          try {
+            var e = document.form.view.value;
+            document.form.view.value = eval(e);
+          } catch (a) {
+               alert(a);
+          } finally {
+
+          }
+
+       }
+       function c(){
+
+            document.form.view.value = '';
+       }
+    </script>
+</html>
