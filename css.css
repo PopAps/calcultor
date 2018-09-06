@@ -13,9 +13,9 @@ html body{
 
 }
 .button{
-  width: 50px;
-  height: 50px;
-  font-size: 25px;
+  width: 100px;
+  height: 100px;
+  font-size: 50px;
   margin: 2;
   cursor: pointer;
   background: rgba(42,50,113, .28);
@@ -23,21 +23,21 @@ html body{
   border: 0;
 }
 .view{
-    width: 210px;
+    width: 410px;
     margin:5;
-    font-size: 30px;
+    font-size: 40px;
     padding: 5;
     height: 45px;
     color: #6cacc5;
 }
 .main{
    position: absolute;
-   top: 25%;
-   left: 45%;
+   top: 15%;
+   left: 40%;
 
 }
 h1{
-  font-size: 30px;
+  font-size: 50px;
   color: #6cacc5;
   text-align: center;
 }
@@ -47,4 +47,14 @@ h1{
     width: 100%;
     height: 20px;
     background-color: rgb(255, 255, 255);
+}
+@@media  screen and (max-width:959px)
+{
+     .main{
+       width: 100%;
+     }
+     .view{
+       width: 30%;
+     }
+
 }
