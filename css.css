@@ -13,9 +13,9 @@ html body{
 
 }
 .button{
-  width: 100px;
-  height: 100px;
-  font-size: 50px;
+  width: 70px;
+  height: 70px;
+  font-size: 40px;
   margin: 2;
   cursor: pointer;
   background: rgba(42,50,113, .28);
@@ -23,21 +23,22 @@ html body{
   border: 0;
 }
 .view{
-    width: 410px;
+    width: 290px;
     margin:5;
-    font-size: 40px;
+    font-size: 25px;
     padding: 5;
     height: 45px;
     color: #6cacc5;
+
 }
 .main{
    position: absolute;
    top: 15%;
-   left: 40%;
+   left: 45%;
 
 }
 h1{
-  font-size: 50px;
+  font-size: 30px;
   color: #6cacc5;
   text-align: center;
 }
